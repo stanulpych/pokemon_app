@@ -1,0 +1,37 @@
+name: pokemon
+description: Pokemons application.
+version: 1.0.0+1
+publish_to: none
+
+environment:
+  sdk: ">=2.19.6 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  core:
+    path: core
+  router:
+    path: router
+  shared_dependencies:
+    path: shared_dependencies
+
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.1
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+
+flutter_launcher_icons:
+  ios: true
+  android: "launcher_icon"
+  image_path: "assets/images/png/pokemon-icon.png"
+  min_sdk_android: 21
+  remove_alpha_ios: true
