@@ -6,56 +6,6 @@ Pokemons
 ## Description
 Application for viewing pokemons using pokeapi made with Flutter as a task for Innowise Group.
 
-#### Branches
-This repository holds two branches with infinite lifetime:
-1. `main`
-2. `develop`
-
-And two other branches can be created:
-* `feature`
-* `bugfix`
-
-`feature` is associated with implementing new logic for application, as the `bugfix` with repaigring the current one.
-
-The current work is going in the main branch.
-
-Title:
-    VersionName - 1.0.22
-Description:
-    * Fixed crash with uploading avatars.
-    * Fixed bug with navigating from settings.
-    * Implemented push-notification module.
-    * and more...
-```
-
-Then tag should be added `v_global.feature.fixes`.
-
-#### Develop branch
-Branches `feature/name` is created from develop. Sub-branches `feature/name-deatails` can be created 
-if the task is large and we want to split it into a smaller ones.
-
-#### Testing
-If bugs were found during testing, then new `bugfix/name-details` branch is created from develop 
-and merged when bug is fixed.
-
-#### Pull Request
-Every Pull Request must have **title** and **description**. Title shortly describe implemented logic and 
-description provides some additional details (problem, decision, edge case, and etc.):
-```
-Title: 
-    Add forget password link to registration screen
-Descrition:
-    Designer decided to add it as underline link instead of additional screen.
-
-Title:
-    Add login API request
-Description:
-    POST request with url = https://test.service/api/v1/login.
-```
-
-#### Commit name
-`[Verb infinitive][description][.]` 
-
 ## Architecture
 Uses BloC and Clean Architecture. Dependency Injection made via GetIt. Dependency rule: inner layers are
 independent of outer layers.
